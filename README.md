@@ -23,3 +23,10 @@ install this format:
 ```
 quarto install extension fhdsl/dasl-quarto-html
 ```
+
+## Fred Hutch branding
+
+This report uses CSS styling based on the Fred Hutch branding guidance 
+available at <https://brand.fredhutch.org/>.
+
+![](example.png)
