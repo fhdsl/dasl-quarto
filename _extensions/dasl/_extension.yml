@@ -12,6 +12,7 @@ contributes:
         - title-block.html
       date-format: "YYYY-MM-DD"
       title-block-banner: "#FFFFFF"
+      fontcolor: black
       toc: true
       toc-location: right
       embed-resources: true
