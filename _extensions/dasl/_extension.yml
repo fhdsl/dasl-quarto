@@ -1,0 +1,18 @@
+title: DaSL Theme
+author: Monica Gerber
+version: 1.0.0
+quarto-required: ">=1.3.0"
+contributes:
+  formats:
+    html:
+      theme:
+        - cosmo
+        - styles_dasl.scss
+      template-partials:
+        - title-block.html
+      date-format: "YYYY-MM-DD"
+      title-block-banner: "#FFFFFF"
+      toc: true
+      toc-location: right
+      embed-resources: true
+      smooth-scroll: true

@@ -1,0 +1,80 @@
+---
+title: "Report Title"
+subtitle: "Report Subtitle"
+description: "This is a report using the Fred Hutch DaSL theme."
+author: "Name"
+date: last-modified
+format: dasl-html
+---
+
+## Data Science Lab Template
+
+Use this template for writing reports in the Data Science Lab. Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Fred Hutch Plot Themes
+
+Use the package [`hutchplot`](https://github.com/fhdsl/hutchplot) to make plots with Fred Hutch colors:
+
+```{r message=FALSE}
+library(ggplot2)
+library(hutchplot)
+
+ggplot(diamonds[sample(nrow(diamonds), 1000), ], aes(carat, price)) +
+  geom_point(aes(colour = color)) +
+  scale_colour_palette_d(hutch_palette) +
+  theme_bw() +
+  dasl_logo()
+```
+
+## Callout Blocks
+
+### Default Appearance
+
+::: {.callout-note}
+Note that there are five types of callouts, including: `note`, `tip`, `warning`, `caution`, and `important`.
+:::
+
+::: {.callout-warning}
+Callouts provide a simple way to attract attention, for example, to this warning.
+:::
+
+::: {.callout-important}
+Danger, callouts will really improve your writing.
+:::
+
+::: {.callout-tip}
+This is an example of a callout with a caption.
+:::
+
+::: {.callout-caution collapse="false"}
+### Expand To Learn About Collapse
+
+This is an example of a ‘collapsed’ caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+
+### Simple Appearance
+
+::: {.callout-note appearance="simple"}
+### Pay Attention
+
+Using callouts is an effective way to highlight content that your reader give special consideration or attention.
+:::
+
+::: {.callout-warning appearance="simple"}
+Callouts provide a simple way to attract attention, for example, to this warning.
+:::
+
+::: {.callout-important appearance="simple"}
+Danger, callouts will really improve your writing.
+:::
+
+::: {.callout-tip appearance="simple"}
+This is an example of a callout with a caption.
+:::
+
+::: {.callout-caution appearance="simple" collapse="true"}
+## Expand To Learn About Collapse
+
+This is an example of a ‘collapsed’ caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+
