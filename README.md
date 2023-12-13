@@ -24,6 +24,8 @@ install this format:
 quarto install extension fhdsl/dasl-quarto-html
 ```
 
+Then add `format: dasl-html` to the quarto YAML header.
+
 ## Fred Hutch branding
 
 This report uses CSS styling based on the Fred Hutch branding guidance 
